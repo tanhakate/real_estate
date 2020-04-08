@@ -176,14 +176,14 @@ ALTER TABLE `summary_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 
--- Constraints for table `Commission`
+-- Foreign Key Constraints for table `Commission`
 --
 ALTER TABLE `Commission`
   ADD CONSTRAINT `agent_commission` FOREIGN KEY (`agent_id`) REFERENCES `Agent` (`id`),
   ADD CONSTRAINT `sale_commission` FOREIGN KEY (`sale_id`) REFERENCES `sale` (`id`);
 
 --
--- Constraints for table `House`
+-- Foreign Key Constraints for table `House`
 --
 ALTER TABLE `House`
   ADD CONSTRAINT `agent_house` FOREIGN KEY (`agent_id`) REFERENCES `Agent` (`id`),
@@ -191,7 +191,7 @@ ALTER TABLE `House`
   ADD CONSTRAINT `seller_house` FOREIGN KEY (`seller_id`) REFERENCES `Person` (`id`);
 
 --
--- Constraints for table `sale`
+-- Foreign Key Constraints for table `sale`
 --
 ALTER TABLE `sale`
   ADD CONSTRAINT `agent_sale` FOREIGN KEY (`agent_id`) REFERENCES `Agent` (`id`),
