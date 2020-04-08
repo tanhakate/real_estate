@@ -61,7 +61,8 @@ For a transaction, when there is a new entry in the `sale` table, the `House` ta
 START TRANSACTION;
 INSERT INTO `sale` (`id`, `house_id`, `buyer_id`, `agent_id`, `sale_price`, `sale_date`) VALUES
 (28, 1, 11, 7, 678099, '2020-02-04');
-UPDATE `House` SET `sold` = '1' WHERE `House`.`id` = 11;
+UPDATE `House` SET `sold` = '1' WHERE `House`.`id` = 1;
 COMMIT;
 
 ```
+Suppose, we are selling a house of ID 1, so we have to set the sold colum for the house with ID 1 as 1. This should have for all the entries in the sell table. 
