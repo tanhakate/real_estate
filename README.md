@@ -17,8 +17,9 @@ Install MySQL using the following link: https://dev.mysql.com/doc/mysql-osx-exce
 	3) To work with the database: USE real_estate
 	4) Create the tables: SOURCE create.sql 
 	5) Add dummy data: SOURCE insert.sql
-	6) To query from the database, open the query.sql file and execute the commands manually
-
+	6) To query from the database, open the query.sql file and execute each command manually which returns all the expected results with the dummy data.
+	
+![alt text](https://raw.githubusercontent.com/tanhakate/real_estate/master/real_estate_design.png)
 
 ## There are 7 tables:
 
