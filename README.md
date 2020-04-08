@@ -1,10 +1,10 @@
 # Real Estate Database 
 
-## Components: files:
+## Component files:
 
 README.md: describes the database
 create.py: creates the database with SQL
-insert.py: inserts dummy data into the tables
+insert_data.py: inserts dummy data into the tables
 query.py: contains queries which updates the tables
 
 
