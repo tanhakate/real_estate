@@ -19,7 +19,7 @@ Install MySQL using the following link: https://dev.mysql.com/doc/mysql-osx-exce
 	5) Add dummy data: SOURCE insert.sql
 	6) To query from the database, open the query.sql file and execute each command manually which returns all the expected results with the dummy data.
 	
-I used phpmyadmin to create the database for the project. Phpmyadmin is a web administrator tool which can be used to design a database, and it has a in-built visualization relationships between tables. The current design of the database is as follows: 
+I used phpmyadmin to create the database for the project. Phpmyadmin is a web administrator tool which can be used to design a database, and it has an in-built visualization tool to show the relationships between tables. The current design of the database is as follows: 
 
 ![alt text](https://raw.githubusercontent.com/tanhakate/real_estate/master/real_estate_design.png)
 
