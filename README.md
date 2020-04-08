@@ -3,8 +3,11 @@
 ## Component files:
 
 README.md: describes the database
+
 create.sql: creates the database with SQL
+
 insert_data.py: inserts dummy data into the tables
+
 query.sql: contains queries which updates the tables
 
 
