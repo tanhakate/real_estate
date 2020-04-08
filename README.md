@@ -52,3 +52,5 @@ The tables are guaranteed in second normal form because it is already in 1NF for
 The tables are guaranteed in the third normalization form because it is already in 2nd form and there is no transitive functional dependency. For example, we could have included sale data in the `Agent` table, but each agent can make multiple sales so there would be data redundancy where the non-key column doesn't depend on the primary key of agent ID. So, we have two separate tables: `Agent` table and `sale` table, each of which has its own primary key. 
 
 Ultimately, the database follows 3NF design. 
+
+All the primary keys are indexed, so that it is faster to search the database. 
