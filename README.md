@@ -53,4 +53,15 @@ The tables are guaranteed in the third normalization form because it is already 
 
 Ultimately, the database follows 3NF design. 
 
-All the primary keys are indexed, so that it is faster to search the database. 
+All the primary keys are indexed, so that it is faster to search the database. Right now, the data was entered manually. 
+
+For a transaction, when there is a new entry in the `sale` table, the `House` table's sold column must be updated so that it shows as sold (i.e. '1' instead of '0'). 
+
+```SQL
+START TRANSACTION;
+INSERT INTO `sale` (`id`, `house_id`, `buyer_id`, `agent_id`, `sale_price`, `sale_date`) VALUES
+(28, 1, 11, 7, 678099, '2020-02-04');
+UPDATE `House` SET `sold` = '1' WHERE `House`.`id` = 11;
+COMMIT;
+
+```
